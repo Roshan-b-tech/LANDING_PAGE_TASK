@@ -3,6 +3,15 @@ import { Box, Gift, Globe } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+// Import images
+import greenEclipse from './Ellipse 1 (1).png';
+import heroImage from './Group_10-removebg-preview (1).png';
+import serviceTipsIcon from './Service Tips (1).png';
+import weddingGiftIcon from './Wedding Gift.png';
+import travelAgencyIcon from './Travel Agency.png';
+import securityBgImage from './unsplash_OCrPJce6GPk.png';
+import maskGroup from './Mask Group@2x.png';
+
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -43,7 +52,7 @@ function App() {
             <div className="md:w-1/2 flex items-center justify-center relative">
               {/* Green Eclipse Background */}
               <img 
-                src="/Ellipse 1 (1).png"
+                src={greenEclipse}
                 alt=""
                 className="absolute w-[550px] h-[398px] object-cover"
                 style={{
@@ -56,7 +65,7 @@ function App() {
               
               {/* Main Image */}
               <img 
-                src="/Group_10-removebg-preview (1).png" 
+                src={heroImage}
                 alt="Happy traveler with suitcase"
                 className="relative z-10 w-full h-auto object-contain"
               />
@@ -79,7 +88,7 @@ function App() {
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-lg flex items-center justify-center">
                 <img 
-                  src="/Service Tips (1).png" 
+                  src={serviceTipsIcon}
                   alt="Service Tips"
                   className="w-12 h-12"
                 />
@@ -90,7 +99,7 @@ function App() {
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-lg flex items-center justify-center">
                 <img 
-                  src="/Wedding Gift.png" 
+                  src={weddingGiftIcon}
                   alt="Wedding Gift"
                   className="w-12 h-12"
                 />
@@ -101,7 +110,7 @@ function App() {
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 rounded-lg flex items-center justify-center">
                 <img 
-                  src="/Travel Agency.png" 
+                  src={travelAgencyIcon}
                   alt="Travel Agency"
                   className="w-12 h-12"
                 />
@@ -118,7 +127,7 @@ function App() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="/unsplash_OCrPJce6GPk.png" 
+            src={securityBgImage}
             alt="Security Background"
             className="w-full h-full object-cover object-center brightness-110"
           />
