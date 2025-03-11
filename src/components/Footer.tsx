@@ -1,6 +1,8 @@
 import React from 'react';
 import { Cuboid as Cube } from 'lucide-react';
 import { Instagram, Linkedin, Facebook, Twitter } from 'lucide-react';
+import maskGroup from '../Mask Group@2x.png';
+import FooterImage from '../footer.png';
 
 function Footer() {
   return (
@@ -9,7 +11,7 @@ function Footer() {
       <div className="absolute inset-0 z-0 flex justify-center">
         <div className="absolute inset-0 w-full">
           <img 
-            src="unsplash_1FxMET2U5dU.png" 
+            src={FooterImage} 
             alt="" 
             className="w-full h-full object-cover opacity-30"
             style={{ transform: 'scale(1.2)' }}
@@ -22,7 +24,7 @@ function Footer() {
           {/* Logo Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <img src="/Mask Group@2x.png" alt="logo" />
+              <img src={maskGroup} alt="logo" />
             </div>
             <p className="text-gray-300">
               TRASAVE travel fund is a good way to track your travel money.

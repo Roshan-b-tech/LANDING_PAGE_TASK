@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cuboid as Cube } from 'lucide-react';
+import maskGroup from '../Mask Group@2x.png'; // Updated import path
 
 function Navbar() {
   return (
@@ -7,7 +8,11 @@ function Navbar() {
       <div className="container mx-auto max-w-7xl">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/Mask Group@2x.png" alt="logo" />
+            <img 
+              src={maskGroup} 
+              alt="logo" 
+              className="h-14 w-auto object-contain" // Changed from h-10 to h-14
+            />
           </div>
           
           <div className="hidden md:flex items-center gap-12">
@@ -31,4 +36,4 @@ function Navbar() {
   );
 }
 
-export default Navbar
+export default Navbar;  // Added semicolon here

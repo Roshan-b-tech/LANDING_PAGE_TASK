@@ -10,7 +10,6 @@ import serviceTipsIcon from './Service Tips (1).png';
 import weddingGiftIcon from './Wedding Gift.png';
 import travelAgencyIcon from './Travel Agency.png';
 import securityBgImage from './unsplash_OCrPJce6GPk.png';
-import maskGroup from './Mask Group@2x.png';
 
 function App() {
   return (
